@@ -13,7 +13,7 @@ name: origin_lede-build
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: origin_feeds.conf.default
+  FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: origin_lede.config
   DIY_P1_SH: origin_diy-part1.sh
   DIY_P2_SH: origin_diy-part2.sh
