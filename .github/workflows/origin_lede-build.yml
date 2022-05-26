@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: origin_lede-build
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
