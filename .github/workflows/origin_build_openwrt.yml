@@ -18,17 +18,28 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+
+# ============================================
+# 发布正式版release时会触发编译
 #  release:
 #    types: published
-  push:
-    branches:
-      - master
-    paths:
-      - 'open.config'
+# ============================================
+# 更新修改并推送文件open.config时会触发编译，更新文件open.config时会自动触发Actions workflows
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'open.config'
+# ============================================
+# 计划任务，设定定时触发编译
 #  schedule:
 #    - cron: 0 8 */5 * *
+# ============================================
+# 被点击了star按钮后触发编译
 #  watch:
 #    types: started
+# ============================================
+
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
