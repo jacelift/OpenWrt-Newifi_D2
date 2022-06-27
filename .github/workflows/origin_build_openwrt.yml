@@ -18,17 +18,17 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  release:
-    types: published
-  push:
-    branches:
-      - master
-    paths:
-      - 'open.config'
-  schedule:
-    - cron: 0 8 */5 * *
-  watch:
-    types: started
+#  release:
+#    types: published
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'open.config'
+#  schedule:
+#    - cron: 0 8 */5 * *
+#  watch:
+#    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
